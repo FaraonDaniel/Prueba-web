@@ -42,10 +42,10 @@
             <a class="nav-link js-scroll-trigger" href="graficas.html">Gráficas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="miembros.html">Miembros</a>
+            <a class="nav-link js-scroll-trigger" href="tiemporeal.html">Tiempo real</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="tiemporeal.html">Tiempo real</a>
+            <a class="nav-link js-scroll-trigger" href="miembros.html">Miembros</a>
           </li>
         </ul>
       </div>
@@ -58,95 +58,141 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Gráficas</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Aquí se muestra el análisis de los datos a través de las gráficas</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Ir a primera grafica</a>
+       
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#paises" class="badge">Por paises </a></li>
+            <li class="list-group-item"><a href="#perfiles" class="badge">Por perfiles </a></li>
+            <li class="list-group-item"><a href="#otros" class="badge">Por otros </a></li>
+          </ul>
+        
+        
+        
+
       </div>
     </div>
   </header>
+ 
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Gráfica 1</h2>
-          <p class="text-white-50"> NOMBRE GRÁFICA modo1
-            <a href="graficas.html">(ver index)</a> Información de la grafica</p>
-        </div>
-      </div>
-      <img src="img/barras.png" class="img-fluid" alt="">
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/barras.png" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>GRÁFICA MODO 2.0</h4>
-            <p class="text-black-50 mb-0">Aqui mostrariamos las graficas de modo 2.0</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Featured Project Row 2 -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>GRÁFICA MODO 2.1</h4>
-            <p class="text-black-50 mb-0">Aqui mostrariamos las graficas de modo 2.1</p>
-          </div>
-        </div>
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/barras.png" alt="">
-        </div>
-        
-      </div>
-
-
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/barras.png" alt="">
+  <!-- Contenedor -->
+  <section id="projects" class="projects-section bg-white">
+    <div id="paises" class="container">
+      
+  <!-- Por paises -->
+      <div class="bg-black row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="bg-black col-lg-6 my-auto">
+          <img class="img-fluid" src="img/mapa.png" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Graficas modo 3</h4>
-                <p class="mb-0 text-white-50">Mostramos graficas de modo 3</p>
+                <h4 class="text-white">GRÁFICAS POR PAISES</h4>
+                <div class="btn-group">
+                    <button type="button" class="bg-white btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Elegir el pais
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">EEUU</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">EEUU</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+
+                    </ul>
+                  </div>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Project Two Row -->
+<!-- Por perfiles -->
+    <div id="perfiles" class="container">
       <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/barras.png" alt="">
+        <div class="col-lg-6 my-auto">
+          <img class="img-fluid" src="img/userone.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Graficas modo 4</h4>
-                <p class="mb-0 text-white-50">Mostramos graficas de modo 4</p>
+                <h4 class="text-white">GRÁFICAS POR PERFILES</h4>
+                <div class="btn-group">
+                    <button type="button" class="bg-white btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Elegir el perfil
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">PEPITO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">JUANITO</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">PANCHO</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">FRAN </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ALICIA</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">NATTY</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">JAUNIN</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">JAIII</a></li>
+
+                    </ul>
+                  </div>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
+    </div>
+
+  <!-- Por otros -->
+      <div id="otros" class="container">
+        <!-- Project One Row -->
+        <div class="bg-black row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="bg-black col-lg-6 my-auto">
+            <img class="img-fluid" src="img/bg-conector.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">OTROS</h4>
+                  <div class="btn-group">
+                    <button type="button" class="bg-white btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Elegir el pais
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">EEUU</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">EEUU</a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">MEXICO </a></li>
+                      <li class="list-group-item"><a href="tiemporeal.html" class="badge">ESPAÑA</a></li>
+                    </ul>
+                  </div>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Your Website 2019
+    </div>
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
