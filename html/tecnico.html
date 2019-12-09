@@ -75,32 +75,61 @@
           <div class="featured-text text-center text-lg-left">
             <h4>HERRAMIENTAS</h4>
             <p class="text-black-50 mb-0"> Para poder realizar este análisis y tratamiento de los datos,
-              hemos utilizado Spark con Python (v.3.7.1) en un cluster de Spark en AWS (Amazon Web Service). </p>
+              hemos utilizado Spark con Python en un cluster de Spark en AWS (Amazon Web Service). </p>
           </div>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>LIBRERIAS</h4>
+            <h4>LIBRERÍAS</h4>
             <p class="text-black-50 mb-0">Para nuestro proyecto hemos usado las librerías:</p>
             <p class="text-black-50 mb-0">&nbsp ■ Pandas</p>
             <p class="text-black-50 mb-0">&nbsp ■ Numpy</p>
-            <p class="text-black-50 mb-0"></p>
-            <p class="text-black-50 mb-0"></p>
+            <p class="text-black-50 mb-0">&nbsp ■ Seaborn</p>
+            <p class="text-black-50 mb-0">&nbsp ■ Matplotlib</p>
           </div>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>CÓMO INSTALAR LAS LIBRERÍAS</h4>
-            <p class="text-black-50 mb-0">Poner fotos</p>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> sudo pip install (librería)</pre>
           </div>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4>CÓMO EJECUTAR LA APLICACIÓN EN LOCAL</h4>
-            <p class="text-black-50 mb-0">Poner fotos</p>
+            <h4>MENU PRINCIPAL (comandos)</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp -h #Ver opciones</pre>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 1 #Most popular video.</pre>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 2 #Most played video.</pre>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 3 #Top 10 videos</pre>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 0 #Exit</pre>
+          </div>
+      </div>
+
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>SCRAP</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp args</pre>
+            <p class="text-black-50 mb-0">&nbsp ■ Si args = --key_path:</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to the file containing the api key, by default will use api_key.txt in the same directory', default='api_key.txt')</p>
+            <p class="text-black-50 mb-0">&nbsp ■ Si args = --country_code_path:</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to the file containing the list of country codes to scrape, by default will use country_codes.txt in the same directory', default='country_codes.txt'</p>
+            <p class="text-black-50 mb-0">&nbsp ■ Si args = --output_dir:</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to save the outputted files in', default='output/'</p>
+          </div>
+      </div>
+      
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>VER GRÁFICAS SEGÚN PAÍS</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp graficas arg2</pre>
+            <p class="text-black-50 mb-0">&nbsp ■ Si arg2 = all or none</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp Muestra las gráficas de todos los paises</p>
+            <p class="text-black-50 mb-0">&nbsp ■ Si args = 'country'</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp Muestra la gráfica del país seleccionado</p>
+            <p class="text-black-50 mb-0">&nbsp &nbsp &nbsp 'country' puede ser CA, DE, FR, GB, IN, JP, KR, MX, RU, US</p>
           </div>
       </div>
 
