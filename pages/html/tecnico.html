@@ -93,52 +93,71 @@
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>CÓMO INSTALAR LAS LIBRERÍAS</h4>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> sudo pip install (librería)</pre>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> sudo pip install [librería]</pre>
           </div>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        
           <div class="featured-text text-center text-lg-left">
-            <h4>MENU PRINCIPAL (comandos)</h4>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp -h #Ver opciones</pre>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 1 #Most popular video.</pre>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 2 #Most played video.</pre>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 3 #Top 10 videos</pre>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp 0 #Exit</pre>
+            <h4>VER MEJORES DÍAS PARA SUBIR VIDEOS</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> spark-submit processStreamData.py best_day_of_week </pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+              <img class="img-fluid featured-text mb-3 mb-lg-0" src="../img/codigos/bestday.PNG" alt="">
           </div>
       </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        
           <div class="featured-text text-center text-lg-left">
-            <h4>SCRAP</h4>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp args</pre>
-            <p class="text-black-50 mb-0">&nbsp ■ Si args = --key_path:</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to the file containing the api key, by default will use api_key.txt in the same directory', default='api_key.txt')</p>
-            <p class="text-black-50 mb-0">&nbsp ■ Si args = --country_code_path:</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to the file containing the list of country codes to scrape, by default will use country_codes.txt in the same directory', default='country_codes.txt'</p>
-            <p class="text-black-50 mb-0">&nbsp ■ Si args = --output_dir:</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp help='Path to save the outputted files in', default='output/'</p>
+            <h4>VER VIDEOS MÁS COMENTADOS</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> spark-submit processStreamData.py MOST_COMMENTED</pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+              <img class="img-fluid featured-text mb-3 mb-lg-0" src="../img/codigos/mostcommented.PNG" alt="">
           </div>
       </div>
-      
+
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        
+          <div class="featured-text text-center text-lg-left">
+            <h4>VER VIDEOS CON MÁS LIKES</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> spark-submit processStreamData.py MOST_LIKED</pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+              <img class="img-fluid featured-text mb-3 mb-lg-0" src="../img/codigos/mostiked.PNG" alt="">
+          </div>
+      </div>
+
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        
+          <div class="featured-text text-center text-lg-left">
+            <h4>VER VIDEOS CON MÁS VISITAS</h4>
+            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;"> spark-submit processStreamData.py most_view</pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+              <img class="img-fluid featured-text mb-3 mb-lg-0" src="../img/codigos/mostview.PNG" alt="">
+          </div>
+      </div>
+ 
+
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>VER GRÁFICAS SEGÚN PAÍS</h4>
-            <pre class="text-white-50 mb-0" style="background-color: #2C3E50;">./youtubeapp graficas arg2</pre>
-            <p class="text-black-50 mb-0">&nbsp ■ Si arg2 = all or none</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp Muestra las gráficas de todos los paises</p>
-            <p class="text-black-50 mb-0">&nbsp ■ Si args = 'country'</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp Muestra la gráfica del país seleccionado</p>
-            <p class="text-black-50 mb-0">&nbsp &nbsp &nbsp 'country' puede ser CA, DE, FR, GB, IN, JP, KR, MX, RU, US</p>
+            <p class="text-black-50 mb-0">Mostrar la gráfica a nivel mundial</p>
+            <pre class="text-white-50 text-center mb-0" style="background-color: #2C3E50;">spark-submit topCategories.py -m graph all </pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+            <p class="text-black-50 mb-0">Muestra la gráfica del país seleccionado</p>
+            <pre class="text-white-50 text-center mb-0" style="background-color: #2C3E50;">spark-submit topCategories.py -m graph [pais] </pre>
+            <p class="text-black-50 mb-0">&nbsp [pais] puede ser CA, DE, FR, GB, IN, JP, KR, MX, RU, US</p>
           </div>
       </div>
 
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>CÓMO EJECUTAR LA APLICACIÓN EN CLUSTER</h4>
-            <p class="text-black-50 mb-0">Poner fotos</p>
-          </div>
-      </div>
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -147,64 +166,9 @@
           </div>
       </div>
 
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>COLUMNAS DEL DATASET</h4>
-            <p class="text-black-50 mb-0">video_id</p>
-            <p class="text-black-50 mb-0">trending_date</p>
-            <p class="text-black-50 mb-0">title</p>
-            <p class="text-black-50 mb-0">channel_title</p>
-            <p class="text-black-50 mb-0">category_id</p>
-            <p class="text-black-50 mb-0">publish_time</p>
-            <p class="text-black-50 mb-0">tags</p>
-            <p class="text-black-50 mb-0">views</p>
-            <p class="text-black-50 mb-0">likes</p>
-            <p class="text-black-50 mb-0">dislikes</p>
-            <p class="text-black-50 mb-0">comment_count</p>
-            <p class="text-black-50 mb-0">thumbnail_link</p>
-            <p class="text-black-50 mb-0">comments_disabled</p>
-            <p class="text-black-50 mb-0">ratings_disabled</p>
-            <p class="text-black-50 mb-0">video_error_or_removed</p>
-            <p class="text-black-50 mb-0">description</p>
-          </div>
-      </div>
 
 </div> 
 </section>
-
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section bg-light">
-        <div class="container">
-    
-          <!-- Featured Project Row -->
-          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-            <div class="col-xl-8 col-lg-7">
-              <img class="img-fluid mb-3 mb-lg-0" src="../img/tecnica.jpg" alt="">
-            </div>
-            <div class="col-xl-4 col-lg-5">
-              <div class="featured-text text-center text-lg-left">
-                <h4>UNA</h4>
-                <p class="text-black-50 mb-0"> {---- Foto de codigo. Descripcion</p>
-              </div>
-            </div>
-          </div>
-  </div> 
-  </section>
-
-  <!-- About Section -->
-  <section id="grafica" class="projects-section bg-light text-center">
-    <div class="container">
-      <div class="row align-items-center ">
-          <div class="col-lg-8 mx-auto">
-          <h2 class="text-black mb-4">PEQUEÑAS DESCRIPCIONES</h2>
-          <p class="text-black-50">aqui podemos poner pequeñas descripciones</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
 
   <!-- Footer -->
