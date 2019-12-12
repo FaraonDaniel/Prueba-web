@@ -48,6 +48,9 @@
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="../tiemporeal.html">Tiempo real</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="../machinelearning.html">Machine Learning</a>
+              </li>
         </ul>
       </div>
     </div>
@@ -144,16 +147,31 @@
               <img class="img-fluid featured-text mb-3 mb-lg-0" src="../img/codigos/mostview.PNG" alt="">
           </div>
       </div>
- 
+
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>VER VIDEOS SEGÚN AÑO</h4>
+            <p class="text-black-50 mb-0">Mostrar por consola la cantidad de videos más vistos según el año</p>
+            <pre class="text-white-50  mb-0" style="background-color: #2C3E50;">&nbsp spark-submit globalStadistics.py YEAR </pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+            <h4>VER VIDEOS SEGÚN MES</h4>
+            <p class="text-black-50 mb-0">Mostrar por consola la cantidad de videos más vistos según el mes</p>
+            <pre class="text-white-50  mb-0" style="background-color: #2C3E50;">&nbsp spark-submit globalStadistics.py MONTH </pre>
+            <p class="text-black-50 mb-0">&nbsp </p>
+
+          </div>
+      </div>
+
+
 
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>VER GRÁFICAS SEGÚN PAÍS</h4>
             <p class="text-black-50 mb-0">Mostrar la gráfica a nivel mundial</p>
-            <pre class="text-white-50 text-center mb-0" style="background-color: #2C3E50;">spark-submit topCategories.py -m graph all </pre>
+            <pre class="text-white-50  mb-0" style="background-color: #2C3E50;">&nbsp spark-submit topCategories.py -m graph all </pre>
             <p class="text-black-50 mb-0">&nbsp </p>
             <p class="text-black-50 mb-0">Muestra la gráfica del país seleccionado</p>
-            <pre class="text-white-50 text-center mb-0" style="background-color: #2C3E50;">spark-submit topCategories.py -m graph [pais] </pre>
+            <pre class="text-white-50  mb-0" style="background-color: #2C3E50;">&nbsp spark-submit topCategories.py -m graph [pais] </pre>
             <p class="text-black-50 mb-0">&nbsp [pais] puede ser CA, DE, FR, GB, IN, JP, KR, MX, RU, US</p>
           </div>
       </div>
@@ -163,6 +181,14 @@
           <div class="featured-text text-center text-lg-left">
             <h4>TIEMPO REAL</h4>
             <a href="../tiemporeal.html" class="btn btn-primary js-scroll-trigger">Ir a tiempo real</a>
+          </div>
+      </div>
+
+      
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>MACHINE LEARNING</h4>
+            <a href="../machinelearning.html" class="btn btn-primary js-scroll-trigger">Ver machine learning</a>
           </div>
       </div>
 
